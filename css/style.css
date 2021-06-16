@@ -1,0 +1,64 @@
+body {
+    background-color: #FEDDBE;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #0A1931;
+}
+
+.container {
+    background-color: #FFC947;
+    display: inline-block;
+    margin: 30px auto;
+    padding: 20px 80px;
+}
+
+.gameName {
+    font-weight: bold;
+    padding-bottom: 20px;;
+}
+
+.selection {
+    padding: 10px;
+}
+
+.iconSelection {
+    padding: 20px;
+}
+
+.button {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#computerSelection {
+    color: #0A1931;
+    border-color: #0A1931;
+    font-size: 30px;
+    background-color: #FEDDBE;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#imgYourSelection {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#imgComputerSelection {
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#result {
+    font-size: 40px;
+    font-weight: bolder;
+}
