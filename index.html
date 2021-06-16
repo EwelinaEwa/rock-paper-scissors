@@ -3,8 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!--<div class="tenor-gif-embed" data-postid="8208687" data-share-method="host" data-width="400px" data-aspect-ratio="1.3387096774193548"><a href="https://tenor.com/view/friends-rock-paper-scissors-gif-8208687">Friends Rock Paper Scissors GIF</a> from <a href="https://tenor.com/search/friends-gifs">Friends GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>-->
+    <h1 class="gameName">Rock Paper Scissors</h1>
+    <p class>Choose your figure:</p>
+    <div class="iconSelection">
+        <label for="selectRock">
+        <button id="selectRock"><img src="images/002-fist.png" alt="Rock"></button>
+        </label>
+        <label for="selectPaper">
+        <button id="selectPaper"><img src="images/003-palm.png" alt="Paper"></button>
+        </label>
+        <label for="selectScissors">
+        <button id="selectScissors"><img src="images/001-peace.png" alt="Scissors"></button>
+        </label>
+    </div>
+    <label for="computerSelection" class="playLabel">Push play to see computers pick<br>
+        <button id="computerSelection">Play</button>
+    </label>
+    <p class="selection">You selected</p>
+    <p class="selection">Computer selected</p>
+    <p id="result"></p>
+
+<script src="script/script.js"></script>
 
 </body>
 </html>
