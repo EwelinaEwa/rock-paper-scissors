@@ -11,25 +11,29 @@
 <!--<div class="tenor-gif-embed" data-postid="8208687" data-share-method="host" data-width="400px" data-aspect-ratio="1.3387096774193548"><a href="https://tenor.com/view/friends-rock-paper-scissors-gif-8208687">Friends Rock Paper Scissors GIF</a> from <a href="https://tenor.com/search/friends-gifs">Friends GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>-->
     <h1 class="gameName">Rock Paper Scissors</h1>
     <p class="selection">Choose your figure:</p>
-    <div class="iconSelection">
         <label for="selectRock">
-        <button id="selectRock" class="button"><img src="images/002-fist.png" alt="Rock"></button>
+        <button type="radio" id="selectRock" class="button rock" ><img src="images/002-fist.png" alt="Rock"></button>
         </label>
         <label for="selectPaper">
-        <button id="selectPaper" class="button"><img src="images/003-palm.png" alt="Paper"></button>
+        <button type="radio" id="selectPaper" class="button paper"><img src="images/003-palm.png" alt="Paper"></button>
         </label>
         <label for="selectScissors">
-        <button id="selectScissors" class="button"><img src="images/001-peace.png" alt="Scissors"></button>
+        <button type="radio" id="selectScissors" class="button scissors"><img src="images/001-peace.png" alt="Scissors"></button>
         </label>
-    </div>
-    <label for="computerSelection" class="playLabel">Push play to see computers pick<br>
-        <button id="computerSelection">Play</button>
+    <br>
+    <label for="computerSelection" class="playLabel">Push play to see computer pick<br>
+        <button type="button" id="computerSelection">Play</button>
     </label>
     <p class="selection">You selected</p>
-    <img src="" alt="imgYourSelection" id="imgYourSelection">
+    <p class="imgYourSelection"></p>
+    <img src="images/002-fist.png" alt="rock" id="rock">
+    <img src="images/003-palm.png" alt="paper" id="paper">
+    <img src="images/001-peace.png" alt="scissors" id="scissors">
     <p class="selection">Computer selected</p>
-    <img src="" alt="imgComputerSelection" id="imgComputerSelection">
-    <p id="result">You won!</p>
+    <img src="images/002-fist.png" alt="rock" id="rockComputer">
+    <img src="images/003-palm.png" alt="paper" id="paperComputer">
+    <img src="images/001-peace.png" alt="scissors" id="scissorsComputer">
+    <p id="result">You won! or lost!</p>
 
 <script src="script/script.js"></script>
 </div>

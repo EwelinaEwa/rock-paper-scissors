@@ -1,5 +1,5 @@
 body {
-    background-color: #FEDDBE;
+    background-color: #0A1931;
     font-family: "Comic Sans MS", sans-serif;
     font-size: 30px;
     text-align: center;
@@ -52,13 +52,25 @@ body {
     width: 100px;
 }
 
+#rock, #paper, #scissors{
+    display: none;
+}
+
 #imgComputerSelection {
     margin: 20px;
     height: 100px;
     width: 100px;
 }
 
+#rockComputer, #paperComputer, #scissorsComputer {
+    display: none;
+}
+
 #result {
     font-size: 40px;
     font-weight: bolder;
+}
+
+#rock {
+    display: none;
 }
