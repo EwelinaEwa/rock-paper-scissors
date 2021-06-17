@@ -2,18 +2,21 @@
 
     document.getElementById("selectRock").addEventListener("click", function () {
         document.getElementById("rock").style.display="inline";
+        document.getElementById("userSelection").style.display="inline";
         userIcon = 0;
         console.log(userIcon)
         randomElement()
     }, { once: true });
     document.getElementById("selectPaper").addEventListener("click", function () {
         document.getElementById("paper").style.display="inline";
+        document.getElementById("userSelection").style.display="inline";
         userIcon = 1;
         console.log(userIcon)
         randomElement()
     }, { once: true });
     document.getElementById("selectScissors").addEventListener("click", function () {
         document.getElementById("scissors").style.display="inline";
+        document.getElementById("userSelection").style.display="inline";
         userIcon = 2;
         console.log(userIcon)
         randomElement()
@@ -27,32 +30,40 @@
         switch(randomIcon) {
             case 0:
                 document.getElementById("rockComputer").style.display="inline";
+                document.getElementById("randomSelection").style.display="inline";
                 resultFinal()
                 break;
             case 1:
                 document.getElementById("paperComputer").style.display="inline";
+                document.getElementById("randomSelection").style.display="inline";
                 resultFinal()
                 break;
             case 2:
                 document.getElementById("scissorsComputer").style.display="inline";
+                document.getElementById("randomSelection").style.display="inline";
                 resultFinal()
                 break;
         }
        console.log(randomIcon)
         function resultFinal () {
             if (userIcon === randomIcon) {
+                document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `It's a draw`
             }
             else if (userIcon === 0 && randomIcon === 2) {
+                document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `You win`
             }
             else if (userIcon === 2 && randomIcon === 0) {
+                document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `Computer wins`
             }
             else if (userIcon < randomIcon) {
+                document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `Computer wins`
             }
             else {
+                document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `You win`
             }
         }
