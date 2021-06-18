@@ -1,20 +1,25 @@
 (function () {
     document.getElementById("selectRock").addEventListener("click", function () {
-        userClicked("rock", 0)
-    }, { once: true });
+        userClicked(0)
+        document.getElementById("selectPaper").style.display="none";
+        document.getElementById("selectScissors").style.display="none";
+    });
     document.getElementById("selectPaper").addEventListener("click", function () {
-        userClicked("paper", 1)
-    }, { once: true });
+        userClicked( 1)
+        document.getElementById("selectRock").style.display="none";
+        document.getElementById("selectScissors").style.display="none";
+    });
     document.getElementById("selectScissors").addEventListener("click", function () {
-        userClicked("scissors", 2)
-    }, { once: true });
+        userClicked(2)
+        document.getElementById("selectRock").style.display="none";
+        document.getElementById("selectPaper").style.display="none";
+    });
 
-    function userClicked(id, icon) {
-        document.getElementById(id).style.display="inline";
-        document.getElementById("userSelection").style.display="inline";
-        userIcon = icon
-        randomElement(icon)
+    function userClicked(icon) {
+        userIcon = icon;
+        randomElement(icon);
     }
+    // });
 
     function randomElement(userIcon) {
     document.getElementById("computerSelection").addEventListener("click", function () {
@@ -64,6 +69,6 @@
     }, { once: true });
 
 
-};
+}
 
 })();
