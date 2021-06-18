@@ -18,6 +18,11 @@ body {
     padding-bottom: 20px;;
 }
 
+.firstSelection {
+    padding: 10px;
+    font-size: 30px;
+}
+
 .selection {
     padding: 10px;
     font-size: 30px;

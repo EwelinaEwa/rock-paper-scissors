@@ -1,50 +1,43 @@
 (function () {
-
     document.getElementById("selectRock").addEventListener("click", function () {
-        document.getElementById("rock").style.display="inline";
-        document.getElementById("userSelection").style.display="inline";
-        userIcon = 0;
-        console.log(userIcon)
-        randomElement()
+        userClicked("rock", 0)
     }, { once: true });
     document.getElementById("selectPaper").addEventListener("click", function () {
-        document.getElementById("paper").style.display="inline";
-        document.getElementById("userSelection").style.display="inline";
-        userIcon = 1;
-        console.log(userIcon)
-        randomElement()
+        userClicked("paper", 1)
     }, { once: true });
     document.getElementById("selectScissors").addEventListener("click", function () {
-        document.getElementById("scissors").style.display="inline";
-        document.getElementById("userSelection").style.display="inline";
-        userIcon = 2;
-        console.log(userIcon)
-        randomElement()
+        userClicked("scissors", 2)
     }, { once: true });
 
+    function userClicked(id, icon) {
+        document.getElementById(id).style.display="inline";
+        document.getElementById("userSelection").style.display="inline";
+        userIcon = icon
+        randomElement(icon)
+    }
 
-    function randomElement() {
+    function randomElement(userIcon) {
     document.getElementById("computerSelection").addEventListener("click", function () {
         let icons = [0, 1, 2];
         let randomIcon = icons[Math.floor(Math.random() * icons.length)];
         switch(randomIcon) {
             case 0:
-                document.getElementById("rockComputer").style.display="inline";
-                document.getElementById("randomSelection").style.display="inline";
-                resultFinal()
+                computerSelected("rockComputer")
                 break;
             case 1:
-                document.getElementById("paperComputer").style.display="inline";
-                document.getElementById("randomSelection").style.display="inline";
-                resultFinal()
+                computerSelected("paperComputer")
                 break;
             case 2:
-                document.getElementById("scissorsComputer").style.display="inline";
-                document.getElementById("randomSelection").style.display="inline";
-                resultFinal()
+                computerSelected("scissorsComputer")
                 break;
         }
-       console.log(randomIcon)
+
+        function computerSelected(id) {
+            document.getElementById(id).style.display="inline";
+            document.getElementById("randomSelection").style.display="inline";
+            resultFinal()
+        }
+
         function resultFinal () {
             if (userIcon === randomIcon) {
                 document.getElementById("result").style.display="inline";
