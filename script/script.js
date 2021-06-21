@@ -64,9 +64,16 @@
                 document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `You win`
             }
+            document.getElementById("playAgain").style.display="inline"
         }
 
     }, { once: true });
+
+    document.getElementById("playAgain").addEventListener("click", function () {
+        window.location.reload()
+    })
+
+
 
 
 }

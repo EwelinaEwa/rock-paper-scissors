@@ -74,4 +74,15 @@ body {
     margin: 30px auto;
 }
 
+#playAgain {
+    display: none;
+    color: #0A1931;
+    border-color: #0A1931;
+    font-size: 20px;
+    background-color: #FEDDBE;
+    padding: 10px 60px;
+    margin: 70px auto 10px auto;
+    cursor: pointer;
+}
+
 
