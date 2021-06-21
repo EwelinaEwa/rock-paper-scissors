@@ -24,7 +24,6 @@
     }
 
     function randomElement(userIcon) {
-    // document.getElementById("computerSelection").addEventListener("click", function () {
         let icons = [0, 1, 2];
         let randomIcon = icons[Math.floor(Math.random() * icons.length)];
         switch(randomIcon) {
@@ -42,8 +41,6 @@
         function computerSelected(id) {
             document.getElementById(id).style.display="inline";
             document.getElementById("randomSelection").style.display="inline";
-            // document.getElementById("computerSelection").style.display="none"
-
             resultFinal()
         }
 
@@ -79,9 +76,6 @@
         document.getElementById("userScore").innerHTML = `${userScore}`;
         document.getElementById("computerScore").innerHTML = `${computerScore}`;
 
-    // }, { once: true });
-
-
 
     document.getElementById("playAgain").addEventListener("click", function () {
         document.getElementById("selectRock").style.display="inline";
@@ -91,7 +85,7 @@
         document.getElementById("paperComputer").style.display="none";
         document.getElementById("scissorsComputer").style.display="none";
         document.getElementById("randomSelection").style.display="none";
-        // document.getElementById("computerSelection").style.display="inline";
+        document.getElementById("computerSelection").style.display="inline";
         document.getElementById("result").style.display="none";
         document.getElementById("playAgain").style.display="none";
     })
