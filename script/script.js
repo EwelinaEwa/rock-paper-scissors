@@ -22,7 +22,6 @@
         userIcon = icon;
         randomElement(icon);
     }
-    // });
 
     function randomElement(userIcon) {
     document.getElementById("computerSelection").addEventListener("click", function () {
@@ -43,6 +42,8 @@
         function computerSelected(id) {
             document.getElementById(id).style.display="inline";
             document.getElementById("randomSelection").style.display="inline";
+            document.getElementById("computerSelection").style.display="none"
+
             resultFinal()
         }
 
@@ -90,6 +91,7 @@
         document.getElementById("paperComputer").style.display="none";
         document.getElementById("scissorsComputer").style.display="none";
         document.getElementById("randomSelection").style.display="none";
+        document.getElementById("computerSelection").style.display="inline"
         document.getElementById("result").style.display="none";
         document.getElementById("playAgain").style.display="none";
     })
