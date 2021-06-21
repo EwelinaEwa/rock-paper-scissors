@@ -1,4 +1,4 @@
-(function playGame() {
+(function () {
     document.getElementById("selectRock").addEventListener("click", function () {
         userClicked(0)
         document.getElementById("selectPaper").style.display="none";
