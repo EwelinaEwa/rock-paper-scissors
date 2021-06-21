@@ -15,6 +15,9 @@
         document.getElementById("selectPaper").style.display="none";
     });
 
+    let userScore = 0;
+    let computerScore = 0;
+
     function userClicked(icon) {
         userIcon = icon;
         randomElement(icon);
@@ -43,31 +46,41 @@
             resultFinal()
         }
 
+
+
         function resultFinal () {
             if (userIcon === randomIcon) {
                 document.getElementById("result").style.display="inline";
-                document.getElementById("result").innerHTML = `It's a draw`
+                document.getElementById("result").innerHTML = `It's a draw`;
             }
             else if (userIcon === 0 && randomIcon === 2) {
                 document.getElementById("result").style.display="inline";
-                document.getElementById("result").innerHTML = `You win`
+                document.getElementById("result").innerHTML = `You win`;
+                userScore++;
             }
             else if (userIcon === 2 && randomIcon === 0) {
                 document.getElementById("result").style.display="inline";
-                document.getElementById("result").innerHTML = `Computer wins`
+                document.getElementById("result").innerHTML = `Computer wins`;
+                computerScore++;
             }
             else if (userIcon < randomIcon) {
                 document.getElementById("result").style.display="inline";
-                document.getElementById("result").innerHTML = `Computer wins`
+                document.getElementById("result").innerHTML = `Computer wins`;
+                computerScore++;
             }
             else {
                 document.getElementById("result").style.display="inline";
                 document.getElementById("result").innerHTML = `You win`
+                userScore++;
             }
-            document.getElementById("playAgain").style.display="inline"
+            document.getElementById("playAgain").style.display="inline";
         }
+        document.getElementById("userScore").innerHTML = `${userScore}`;
+        document.getElementById("computerScore").innerHTML = `${computerScore}`;
 
     }, { once: true });
+
+
 
     document.getElementById("playAgain").addEventListener("click", function () {
         window.location.reload()
