@@ -31,7 +31,6 @@ body {
 .selection {
     padding: 10px;
     font-size: 30px;
-    display: none;
 }
 
 .button {
@@ -49,23 +48,24 @@ body {
     display: none;
 }
 
+#randomSelection {
+    visibility: hidden;
+}
+
 .image {
     background-color: #EFEFEF;
     border-color: #0A1931;
     border-style: solid;
     border-width: 1px;
     padding: 33px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     border-radius: 50%;
-}
-
-#rockComputer, #paperComputer, #scissorsComputer {
     display: none;
 }
 
 #result {
-    display: none;
+    visibility: hidden;
     font-size: 40px;
     font-weight: bolder;
     border-style: solid;
