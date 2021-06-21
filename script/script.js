@@ -91,7 +91,7 @@
         document.getElementById("scissorsComputer").style.display="none";
         document.getElementById("randomSelection").style.display="none";
         document.getElementById("result").style.display="none";
-
+        document.getElementById("playAgain").style.display="none";
     })
 
 }
