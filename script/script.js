@@ -1,4 +1,4 @@
-(function () {
+(function playGame() {
     document.getElementById("selectRock").addEventListener("click", function () {
         userClicked(0)
         document.getElementById("selectPaper").style.display="none";
@@ -83,7 +83,15 @@
 
 
     document.getElementById("playAgain").addEventListener("click", function () {
-        window.location.reload()
+        document.getElementById("selectRock").style.display="inline";
+        document.getElementById("selectPaper").style.display="inline";
+        document.getElementById("selectScissors").style.display="inline";
+        document.getElementById("rockComputer").style.display="none";
+        document.getElementById("paperComputer").style.display="none";
+        document.getElementById("scissorsComputer").style.display="none";
+        document.getElementById("randomSelection").style.display="none";
+        document.getElementById("result").style.display="none";
+
     })
 
 
