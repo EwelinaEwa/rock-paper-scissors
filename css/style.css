@@ -8,14 +8,18 @@ body {
 
 .container {
     background-color: #FFC947;
-    display: inline-block;
-    margin: 30px;
+    display: block;
+    alignment: center;
+    width: 500px;
+    margin: 30px auto;
     padding: 40px 80px;
 }
 
 .gameName {
     font-weight: bold;
-    padding-bottom: 20px;;
+    padding: 20px 10px;
+    background-color: #0A1931;
+    color: #FFC947;
 }
 
 .firstSelection {
@@ -45,7 +49,7 @@ body {
     font-size: 30px;
     background-color: #FEDDBE;
     padding: 10px 60px;
-    margin: 20px auto 50px auto;
+    margin: 20px 0 50px 0;
     cursor: pointer;
 }
 
@@ -71,7 +75,7 @@ body {
     border-width: 4px;
     border-color: #0A1931;
     padding: 5px 20px;
-    margin: 30px auto;
+    margin: 30px 0;
 }
 
 #playAgain {
@@ -81,7 +85,7 @@ body {
     font-size: 20px;
     background-color: #FEDDBE;
     padding: 10px 60px;
-    margin: 70px auto 10px auto;
+    margin: 70px 0 10px 0;
     cursor: pointer;
 }
 
