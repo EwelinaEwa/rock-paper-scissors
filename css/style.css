@@ -99,6 +99,7 @@ body {
     position: absolute;
     bottom: 20px;
     left: 850px;
+    visibility: hidden;
 }
 
 

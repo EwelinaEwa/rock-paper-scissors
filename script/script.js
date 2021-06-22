@@ -49,35 +49,31 @@
 
 
         function resultFinal () {
+
             if (userIcon === randomIcon) {
-                document.getElementById("result").style.visibility="visible";
                 document.getElementById("result").innerHTML = `It's a draw`;
             }
             else if (userIcon === 0 && randomIcon === 2) {
-                document.getElementById("result").style.visibility="visible";
                 document.getElementById("result").innerHTML = `You win`;
                 userScore++;
             }
             else if (userIcon === 2 && randomIcon === 0) {
-                document.getElementById("result").style.visibility="visible";
                 document.getElementById("result").innerHTML = `Computer wins`;
                 computerScore++;
             }
             else if (userIcon < randomIcon) {
-                document.getElementById("result").style.visibility="visible";
                 document.getElementById("result").innerHTML = `Computer wins`;
                 computerScore++;
             }
             else {
-                document.getElementById("result").style.visibility="visible";
                 document.getElementById("result").innerHTML = `You win`
                 userScore++;
             }
-            document.getElementById("playAgain").style.display="inline";
+            document.getElementById("result").style.visibility="visible";
+            document.getElementById("playAgain").style.visibility="visible";
+            document.getElementById("userScore").innerHTML = `${userScore}`;
+            document.getElementById("computerScore").innerHTML = `${computerScore}`;
         }
-        document.getElementById("userScore").innerHTML = `${userScore}`;
-        document.getElementById("computerScore").innerHTML = `${computerScore}`;
-
 
     document.getElementById("playAgain").addEventListener("click", function () {
         document.getElementById("selectRock").style.display="inline";
@@ -89,7 +85,7 @@
         document.getElementById("randomSelection").style.visibility="hidden";
         document.getElementById("computerSelection").style.display="none";
         document.getElementById("result").style.visibility="hidden";
-        document.getElementById("playAgain").style.display="none";
+        document.getElementById("playAgain").style.display="visible";
     })
 
 }
